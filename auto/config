@@ -1,0 +1,8 @@
+#!/bin/sh
+
+lb config noauto \
+   --architectures i386 \
+   --linux-flavours 586 \
+   --binary-images hdd \
+   --bootappend-live "boot=live components persistence keyboard-layouts=br,us ip=frommedia" \
+   "${@}"

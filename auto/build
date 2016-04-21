@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Workaround for Debian bug #773833
+mkdir -p chroot/usr/lib
+ln -s chroot/usr/lib/SYSLINUX chroot/usr/lib/syslinux
+
+# Trigger build
+lb build noauto "${@}" 2>&1 | tee build.log
