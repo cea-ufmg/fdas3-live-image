@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Workaround for Debian bug #773833
+ln -s SYSLINUX chroot/usr/lib/syslinux

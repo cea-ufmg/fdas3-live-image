@@ -1,4 +1,4 @@
 aptitude
 ssh
-console-data kbd
+console-data console-setup kbd
 emacs24-nox
